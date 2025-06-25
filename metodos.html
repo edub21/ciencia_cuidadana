@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Métodos Ancestrales - Conservación de la Cebolla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #4caf50;
+      --verde-oscuro: #1b5e20;
+      --blanco: #f9fbe7;
+      --gris: #212121;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--blanco);
+      color: var(--gris);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: rgba(27, 94, 32, 0.9);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      padding: 15px 0;
+      text-align: center;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #a5d6a7;
+    }
+
+    .background-section {
+      background-image: url('img/fondo_cebolla.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .background-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .background-section > div {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .background-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .background-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: var(--verde-oscuro);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Métodos Ancestrales</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="metodos.html">Métodos</a></li>
+      <li><a href="recuperacion.html">Recuperación</a></li>
+      <li><a href="especies.html">Especies</a></li>
+      <li><a href="datoszona.html">Zona</a></li>
+      <li><a href="boletin.html">Boletín</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="whatsapp.html">Bot</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="background-section">
+  <div>
+    <h2>Conservación de la Cebolla</h2>
+    <p>
+      En varias comunidades rurales, para mantener la cebolla fresca durante más tiempo, se aplica una técnica ancestral: colocarla brevemente en un horno tradicional.
+      Esto permite secar su capa exterior, la cual actúa luego como una barrera natural protectora contra la humedad y el deterioro, conservando mejor su interior.
+    </p>
+  </div>
+</section>
+
+<footer>
+  Proyecto desarrollado para la mejora de calidad de vida. Idiomas: Español | Quechua (en construcción)
+</footer>
+
+</body>
+</html>

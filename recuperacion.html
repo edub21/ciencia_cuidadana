@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recuperación de Especies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #4caf50;
+      --verde-oscuro: #1b5e20;
+      --blanco: #f9fbe7;
+      --gris: #212121;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--blanco);
+      color: var(--gris);
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background-color: rgba(27, 94, 32, 0.9);
+      backdrop-filter: blur(8px);
+      padding: 15px 0;
+      text-align: center;
+      color: white;
+      z-index: 1000;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      margin-top: 10px;
+    }
+    nav ul li { margin: 0 10px; }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #a5d6a7;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    main h2 {
+      color: var(--verde-oscuro);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .background-section {
+      background-image: url('img/fondo_recuperacion.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .background-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .background-section > div {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: auto;
+    }
+    .background-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .background-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    section {
+      margin-top: 40px;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      margin-bottom: 15px;
+      color: var(--verde);
+      text-align: center;
+    }
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: var(--verde-oscuro);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Recuperación de Especies</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="metodos.html">Métodos</a></li>
+      <li><a href="recuperacion.html">Recuperación</a></li>
+      <li><a href="especies.html">Especies</a></li>
+      <li><a href="datoszona.html">Zona</a></li>
+      <li><a href="boletin.html">Boletín</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="whatsapp.html">Bot</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Recuperación de Especies</h2>
+  <p>
+    "Renacer Salvaje" colabora con bancos de semillas
+    y programas comunitarios para reintroducir especies nativas.
+    Se documenta su distribución, su aporte nutricional y se crean guías visuales
+    para su cultivo y conservación.
+  </p>
+
+  <section class="background-section">
+    <div>
+      <h2>Árbol de Quishuar</h2>
+      <p>
+        El Quishuar (Buddleja coriacea), especie emblemática de los Andes,
+        ha sido reintroducida exitosamente en varias comunidades.
+        Su fruto, rico en antioxidantes, aporta fibra y ayuda al suelo a retener humedad.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Distribución geográfica</h2>
+    <img src="img/planeta_tierra.jpg" alt="Distribución de especies nativas">
+  </section>
+</main>
+
+<footer>
+  Proyecto desarrollado para la mejora de calidad de vida. Idiomas: Español | Quechua (en construcción)
+</footer>
+
+</body>
+</html>

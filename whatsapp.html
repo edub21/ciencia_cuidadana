@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhatsApp Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #4caf50;
+      --verde-oscuro: #1b5e20;
+      --blanco: #f9fbe7;
+      --gris: #212121;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--blanco);
+      color: var(--gris);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: rgba(27, 94, 32, 0.9);
+      backdrop-filter: blur(8px);
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #a5d6a7;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--verde-oscuro);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      background-color: var(--verde);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    button:hover {
+      background-color: var(--verde-oscuro);
+    }
+
+    footer {
+      background-color: var(--verde-oscuro);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>WhatsApp Bot</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="metodos.html">Métodos</a></li>
+      <li><a href="recuperacion.html">Recuperación</a></li>
+      <li><a href="especies.html">Especies</a></li>
+      <li><a href="datoszona.html">Zona</a></li>
+      <li><a href="boletin.html">Boletín</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="whatsapp.html">Bot</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Integración con WhatsApp</h2>
+  <p>
+    Muy pronto, nuestro sistema contará con un <strong>asistente virtual vía WhatsApp</strong> capaz de brindar respuestas precisas y
+    resúmenes sobre conservación, siembras y métodos productivos.<br><br>
+    Este bot utilizará inteligencia basada en <strong>datos históricos, ambientales y geográficos</strong> para
+    ayudarte a elegir el cultivo más adecuado según tu ubicación y condiciones climáticas.
+  </p>
+
+  <button onclick="alert('El bot aún no está disponible. Pronto estará en funcionamiento.')">Conectar con WhatsApp</button>
+</main>
+
+<footer>
+  Proyecto desarrollado por estudiantes rurales. Idiomas: Español | Quechua (en construcción)
+</footer>
+
+</body>
+</html>

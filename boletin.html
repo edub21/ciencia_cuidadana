@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boletín</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #4caf50;
+      --verde-oscuro: #1b5e20;
+      --blanco: #f9fbe7;
+      --gris: #212121;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--blanco);
+      color: var(--gris);
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background-color: rgba(27, 94, 32, 0.9);
+      backdrop-filter: blur(8px);
+      padding: 15px 0;
+      text-align: center;
+      color: white;
+      z-index: 1000;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      margin-top: 10px;
+    }
+    nav ul li { margin: 0 10px; }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #a5d6a7;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      text-align: center;
+      color: var(--verde-oscuro);
+      margin-bottom: 30px;
+    }
+    article {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    article h3 {
+      color: var(--verde);
+      margin-bottom: 15px;
+    }
+    article p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+    th {
+      background-color: var(--verde-oscuro);
+      color: white;
+    }
+    footer {
+      background-color: var(--verde-oscuro);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Boletín</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="metodos.html">Métodos</a></li>
+      <li><a href="recuperacion.html">Recuperación</a></li>
+      <li><a href="especies.html">Especies</a></li>
+      <li><a href="datoszona.html">Zona</a></li>
+      <li><a href="boletin.html">Boletín</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="whatsapp.html">Bot</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Boletín Mensual</h2>
+
+  <article>
+    <h3>Boletín de Junio - Zona: Altos de Cayambe</h3>
+    <p>
+      Este mes, la sembradora <b>Guardiana Luriana</b> finalizó con éxito su cosecha de <b>papa criolla</b> en la comunidad de Altos de Cayambe.
+      Con apoyo de sensores locales, se registró un promedio de <strong>2.3 toneladas por hectárea</strong> bajo condiciones ambientales controladas.
+    </p>
+
+    <p>
+      Las condiciones óptimas permitieron una cosecha saludable y uniforme, destacando la capacidad del suelo de retener humedad natural.
+      Se recomienda replicar estas prácticas en zonas similares, especialmente entre los 2800 y 3200 m.s.n.m.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Parámetro</th>
+          <th>Promedio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Temperatura</td><td>17.5 °C</td></tr>
+        <tr><td>Humedad del Suelo</td><td>70%</td></tr>
+        <tr><td>Presión</td><td>1015 hPa</td></tr>
+        <tr><td>Luz</td><td>12.000 lux</td></tr>
+      </tbody>
+    </table>
+  </article>
+
+  <article>
+    <h3>Recomendación para Julio</h3>
+    <p>
+      Para el próximo mes, se espera un aumento leve en la radiación solar. Se aconseja considerar cultivos como <b>quinua</b>y <b>habas</b> en zonas medias,
+      especialmente si la humedad se mantiene estable en los primeros 20 cm de profundidad del suelo.
+    </p>
+  </article>
+
+</main>
+
+<footer>
+  Proyecto desarrollado por estudiantes rurales. Idiomas: Español | Quechua (en construcción)
+</footer>
+
+</body>
+</html>
